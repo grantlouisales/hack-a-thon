@@ -19,12 +19,12 @@ public let neutralResponses = ["Be happy in the moment, thats enough. Each momen
                                "Take time to make yourself happy, do more of what makes you happy.",
                                "Do what makes you happy. When it doesn't make you happy anymore, make a change without fear."]
 
-public let angryResponses = ["Tough times never last, bout tough people do.", "Anger makes you smaller, while foriveness forces                             you to grow beyond what you are",
+public let angryResponses = ["Tough times never last, bout tough people do.", "Anger makes you smaller, while forgiveness  forces you to grow beyond what you are",
                              "There are two things a person should never be angry at, what they can help, and what they cannot.",
                              "When angry count ten before you speak; if very angry, a hundred.", "Calm is the best revenge",
-                             "If you are patient in one moment of anger, you will escape a hundrew days of sorrow."]
+                             "If you are patient in one moment of anger, you will escape a hundred days of sorrow."]
 
-public let sadResponses = ["All day is not the same, you need to wait and be patient fo the good things to happen",
+public let sadResponses = ["Every day is not the same, you need to wait and be patient fo the good things to happen",
                            "Be strong now because things will get better. It might be stormy now, but it can't rain forever",
                            "Do not lose hope, believe that there are a thousand beautiful things waiting for you.",
                            "Sunshine comes to all who feel rain, you matter.",
