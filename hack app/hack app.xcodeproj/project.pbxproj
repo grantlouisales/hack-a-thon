@@ -18,6 +18,7 @@
 		59F0FF8C271145940006E6A0 /* hack_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F0FF8B271145940006E6A0 /* hack_appUITests.swift */; };
 		59F0FF8E271145940006E6A0 /* hack_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F0FF8D271145940006E6A0 /* hack_appUITestsLaunchTests.swift */; };
 		59F0FF9B271208EE0006E6A0 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F0FF9A271208EE0006E6A0 /* TextViewController.swift */; };
+		F089ACB227122B8400EFB057 /* testdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089ACB127122B8400EFB057 /* testdata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		59F0FF8B271145940006E6A0 /* hack_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hack_appUITests.swift; sourceTree = "<group>"; };
 		59F0FF8D271145940006E6A0 /* hack_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hack_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		59F0FF9A271208EE0006E6A0 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		F089ACAF2712267100EFB057 /* XCODEJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = XCODEJSON.json; sourceTree = "<group>"; };
+		F089ACB127122B8400EFB057 /* testdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testdata.swift; sourceTree = "<group>"; };
+		F089ACB327122EE600EFB057 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,10 @@
 			children = (
 				59F0FF67271145920006E6A0 /* AppDelegate.swift */,
 				59F0FF69271145920006E6A0 /* SceneDelegate.swift */,
+				F089ACB127122B8400EFB057 /* testdata.swift */,
 				59F0FF6B271145920006E6A0 /* ViewController.swift */,
+				F089ACB327122EE600EFB057 /* MyPlayground.playground */,
+				F089ACAF2712267100EFB057 /* XCODEJSON.json */,
 				59F0FF6D271145920006E6A0 /* Main.storyboard */,
 				59F0FF73271145940006E6A0 /* Assets.xcassets */,
 				59F0FF75271145940006E6A0 /* LaunchScreen.storyboard */,
@@ -201,6 +208,7 @@
 				TargetAttributes = {
 					59F0FF63271145920006E6A0 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					59F0FF7C271145940006E6A0 = {
 						CreatedOnToolsVersion = 13.0;
@@ -265,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F0FF9B271208EE0006E6A0 /* TextViewController.swift in Sources */,
+				F089ACB227122B8400EFB057 /* testdata.swift in Sources */,
 				59F0FF72271145920006E6A0 /* hack_app.xcdatamodeld in Sources */,
 				59F0FF6C271145920006E6A0 /* ViewController.swift in Sources */,
 				59F0FF68271145920006E6A0 /* AppDelegate.swift in Sources */,
@@ -445,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4B9FFJ284Z;
@@ -463,6 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.hack-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4B9FFJ284Z;
