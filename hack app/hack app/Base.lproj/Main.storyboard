@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hack_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-li-Cat">
+                                <rect key="frame" x="51" y="109.5" width="312" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="208-3i-yop">
+                                <rect key="frame" x="157" y="218" width="100" height="460"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iop-Pd-Qt5" userLabel="Happy_button">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="jOq-iy-xMe"/>
+                                            <constraint firstAttribute="width" constant="100" id="tH5-nr-UHE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Happy Emoji "/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="happyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9TE-To-WPo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kag-QD-8yP" userLabel="Neutral_button">
+                                        <rect key="frame" x="0.0" y="120" width="100" height="100"/>
+                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="9C5-Ql-RAT"/>
+                                            <constraint firstAttribute="width" constant="100" id="g5e-R7-e3R"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Neutral Emoji "/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="neutralTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A48-M4-gP0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQQ-nu-SHB" userLabel="Angry_button">
+                                        <rect key="frame" x="0.0" y="240" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0lq-t1-iei"/>
+                                            <constraint firstAttribute="height" constant="100" id="pSM-e6-9wi"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" image="Angry Emoji "/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="angryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZF-Sl-bsr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zw-3P-xM4" userLabel="Sad_button">
+                                        <rect key="frame" x="0.0" y="360" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1Ib-5G-q5V"/>
+                                            <constraint firstAttribute="width" constant="100" id="t2R-Bl-g73"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="Crying Emoji ">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="18o-rK-H0H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.18384286759999999" green="0.59127849340000005" blue="0.69833850860000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="208-3i-yop" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="68j-Ck-Flw"/>
+                            <constraint firstItem="DDh-li-Cat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tur-l0-chT"/>
+                            <constraint firstItem="DDh-li-Cat" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-322.5" id="mad-JV-EKi"/>
+                            <constraint firstItem="208-3i-yop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rvq-nr-aSq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="CKc-8j-2bA">
+            <objects>
+                <viewController storyboardIdentifier="text_vc" id="QY0-5s-EUo" customClass="TextViewController" customModule="hack_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="guY-1e-fqV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tap here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSc-W4-s1r">
+                                <rect key="frame" x="0.0" y="313" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave a note to explain your mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-SO-8AV">
+                                <rect key="frame" x="70" y="242" width="260" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFR-Lr-N5i">
+                                <rect key="frame" x="173" y="398" width="56" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="save_button:" destination="QY0-5s-EUo" eventType="touchUpInside" id="gx6-Ze-RL9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wll-c3-Iut"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="CSc-W4-s1r" firstAttribute="leading" secondItem="wll-c3-Iut" secondAttribute="leading" id="92z-Uc-Mos"/>
+                            <constraint firstItem="wll-c3-Iut" firstAttribute="trailing" secondItem="CSc-W4-s1r" secondAttribute="trailing" id="pkA-a3-4xF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dailynote" destination="CSc-W4-s1r" id="3jG-RX-OBb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7j-lo-DVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755.07246376811599" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Angry Emoji " width="640" height="640"/>
+        <image name="Crying Emoji " width="640" height="640"/>
+        <image name="Happy Emoji " width="640" height="640"/>
+        <image name="Neutral Emoji " width="640" height="642"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
