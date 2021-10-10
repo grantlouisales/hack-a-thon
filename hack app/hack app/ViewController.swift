@@ -6,25 +6,27 @@
 //
 
 import UIKit
+import SwiftUI
 
 public var state = ""
 public var response = ""
+public var quote = ""
 public let happyResponses = ["Be proud of yourself for how hard you're working", "Great job! Keep it up!",
                              "Even if you are on the right track, you will get run over if you just sit there so keep going!",
                              "If I sang the praises of your hard work, I would lose my voice quickly!"]
 
-public let neutralResponses = ["Be happy in the moment, thats enough. Each moment is all we need, not more.",
-                               "When it rains, look for rainbows, when it's dark look for stars.",
+public let neutralResponses = ["Be happy in the moment, that's enough. Each moment is all we need, no more.",
+                               "When it rains look for rainbows, when its dark look for stars.",
                                "Do one thing every day that makes you happy.",
                                "Take time to make yourself happy, do more of what makes you happy.",
                                "Do what makes you happy. When it doesn't make you happy anymore, make a change without fear."]
 
-public let angryResponses = ["Tough times never last, but tough people do.", "Anger makes you smaller, while forgiveness  forces you to grow beyond what you are",
+public let angryResponses = ["Tough times never last, but tough people do.", "Anger makes you smaller, while foriveness forces                             you to grow beyond what you are",
                              "There are two things a person should never be angry at, what they can help, and what they cannot.",
-                             "When angry, count to ten before you speak; if very angry, count to a hundred.", "Calm is the best revenge",
-                             "If you are patient in one moment of anger, you will escape a hundred days of sorrow."]
+                             "When angry count to ten before you speak; if very angry, a hundred.", "Calm is the best revenge",
+                             "If you are patient in one moment of anger, you will escape a hundrew days of sorrow."]
 
-public let sadResponses = ["Every day is not the same, you need to wait and be patient for the good things to happen",
+public let sadResponses = ["All day is not the same, you need to wait and be patient fo the good things to happen",
                            "Be strong now because things will get better. It might be stormy now, but it can't rain forever",
                            "Do not lose hope, believe that there are a thousand beautiful things waiting for you.",
                            "Sunshine comes to all who feel rain, you matter.",
@@ -41,12 +43,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    
     
     @IBAction func happyTapped(_ sender: Any) {
         
         state = "happy"
-        response = happyResponses.randomElement()!
+        let response = happyResponses.randomElement()!
+        quote = response
         print(response)
         
         //present(SecondViewController(), animated: true)
@@ -61,7 +64,8 @@ class ViewController: UIViewController {
     
     @IBAction func neutralTapped(_ sender: Any) {
         state = "neutral"
-        response = neutralResponses.randomElement()!
+        let response = neutralResponses.randomElement()!
+        quote = response
         print(response)
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "text_vc") as? TextViewController else {
@@ -77,7 +81,8 @@ class ViewController: UIViewController {
     
     @IBAction func angryTapped(_ sender: Any) {
         state = "angry"
-        response = angryResponses.randomElement()!
+        let response = angryResponses.randomElement()!
+        quote = response
         print(response)
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "text_vc") as? TextViewController else {
@@ -92,7 +97,8 @@ class ViewController: UIViewController {
     
     @IBAction func sadTapped(_ sender: Any) {
         state = "sad"
-        response = sadResponses.randomElement()!
+        let response = sadResponses.randomElement()!
+        quote = response
         print(response)
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "text_vc") as? TextViewController else {
@@ -106,6 +112,7 @@ class ViewController: UIViewController {
     
     
 }
+
 
 /*class SecondViewController: UIViewController {
     
